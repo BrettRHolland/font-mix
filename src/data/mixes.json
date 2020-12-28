@@ -1,0 +1,114 @@
+[
+  {
+    "headlineFont": {
+      "name": "Roboto Bold",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "sans-serif",
+      "link": "https://fonts.google.com/specimen/Roboto"
+    },
+    "paragraphFont": {
+      "name": "Lora Regular",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "serif",
+      "link": "https://fonts.google.com/specimen/Lora"
+    }
+  },
+  {
+    "headlineFont": {
+      "name": "PT Sans Bold",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "sans-serif",
+      "link": "https://fonts.google.com/specimen/PT+Sans"
+    },
+    "paragraphFont": {
+      "name": "Playfair Display Regular",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "serif",
+      "link": "https://fonts.google.com/specimen/Playfair+Display"
+    }
+  },
+  {
+    "headlineFont": {
+      "name": "Merriweather Regular",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "serif",
+      "link": "https://fonts.google.com/specimen/Merriweather"
+    },
+    "paragraphFont": {
+      "name": "Muli Light",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "sans-serif",
+      "link": "https://fonts.adobe.com/fonts/muli"
+    }
+  },
+  {
+    "headlineFont": {
+      "name": "Poppins Bold",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "sans-serif",
+      "link": "https://fonts.google.com/specimen/Poppins"
+    },
+    "paragraphFont": {
+      "name": "PT Serif Regular",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "serif",
+      "link": "https://fonts.google.com/specimen/PT+Serif"
+    }
+  },
+  {
+    "headlineFont": {
+      "name": "Source Sans Pro Black",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "sans-serif",
+      "link": "https://fonts.google.com/specimen/Source+Sans+Pro"
+    },
+    "paragraphFont": {
+      "name": "Sintony Regular",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "sans-serif",
+      "link": "https://fonts.google.com/specimen/Sintony"
+    }
+  },
+  {
+    "headlineFont": {
+      "name": "Abril Fatface",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "serif",
+      "link": "https://fonts.google.com/specimen/Abril+Fatface"
+    },
+    "paragraphFont": {
+      "name": "Poppins Light",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "sans-serif",
+      "link": "https://fonts.google.com/specimen/Poppins"
+    }
+  },
+  {
+    "headlineFont": {
+      "name": "Cardo Regular",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "serif",
+      "link": "https://fonts.google.com/specimen/Cardo"
+    },
+    "paragraphFont": {
+      "name": "Libre Franklin Regular",
+      "lineSpacing": "",
+      "allCaps": false,
+      "type": "sans-serif",
+      "link": "https://fonts.google.com/specimen/Libre+Franklin"
+    }
+  }
+]
