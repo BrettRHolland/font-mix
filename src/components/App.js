@@ -5,12 +5,12 @@ import mixesJSON from "../data/mixes.json";
 import Header from "./Header";
 
 function App() {
-  const [filter, setFilter] = useState();
+  const [filter, setFilter] = useState("");
   const [mixes, setMixes] = useState(mixesJSON);
 
   useEffect(() => {
     if (filter) {
-      let updatedMixes = mixes.filter(
+      let updatedMixes = mixesJSON.filter(
         (mix) =>
           mix.headlineFont.type === filter && mix.paragraphFont.type === filter
       );
@@ -18,20 +18,30 @@ function App() {
     } else {
       setMixes(mixesJSON);
     }
-  }, [filter, mixes]);
+  }, [filter]);
 
   return (
     <Wrapper>
       <Header />
+      <FilterWrapper>
+        <Filter active={filter === ""} onClick={() => setFilter("")}>
+          All
+        </Filter>
+        <Filter
+          active={filter === "sans-serif"}
+          onClick={() => setFilter("sans-serif")}
+        >
+          Sans-serif
+        </Filter>
+        <Filter active={filter === "serif"} onClick={() => setFilter("serif")}>
+          Serif
+        </Filter>
+      </FilterWrapper>
       <ContentWrapper>
-        <FilterWrapper>
-          <Filter onClick={() => setFilter("")}>All</Filter>
-          <Filter onClick={() => setFilter("sans-serif")}>Sans-serif</Filter>
-          <Filter onClick={() => setFilter("sans-serif")}>Serif</Filter>
-        </FilterWrapper>
         <CardWrapper>
           {mixes.map((mix) => (
             <Card
+              key={mix.headlineFont.name + mix.paragraphFont.name}
               headlineFont={mix.headlineFont}
               paragraphFont={mix.paragraphFont}
             />
@@ -50,34 +60,35 @@ const ContentWrapper = styled.div`
 `;
 
 const FilterWrapper = styled.div`
-  display: grid;
-  justify-content: center;
-  gap: 20px;
-  margin: 0px auto;
-  max-width: 1200px;
-  grid-template-columns: repeat(auto-fit, 100px);
+  background-color: #f8f9fa;
 `;
 
 const Filter = styled.button`
+  background-color: ${(props) => (props.active ? "#dee2e6" : "#f8f9fa")};
   border: none;
-  background-color: #dee2e6;
+  border-right: 1px solid #dee2e6;
   color: #212529;
   cursor: pointer;
   font-weight: bold;
-  padding: 8px 10px;
+  padding: 15px 25px;
+  width: 120px;
 
   &:hover {
-    background-color: #ced4da;
+    background-color: #dee2e6;
+  }
+
+  &:focus {
+    outline: none;
   }
 `;
 
 const CardWrapper = styled.div`
   display: grid;
-  justify-content: center;
   gap: 20px;
+  grid-template-columns: repeat(auto-fit, 330px);
+  justify-content: center;
   margin: 40px auto;
   max-width: 1200px;
-  grid-template-columns: repeat(auto-fit, 330px);
 `;
 
 export default App;

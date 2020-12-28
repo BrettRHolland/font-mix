@@ -11,16 +11,16 @@ function Header() {
 }
 
 const Wrapper = styled.header`
-  background-color: #212529;
-  height: 70px;
-  display: flex;
   align-items: center;
+  background-color: #212529;
+  display: flex;
+  height: 70px;
 `;
 
 const Heading = styled.h1`
   color: #f8f9fa;
-  font-size: 2rem;
   font-family: "Roboto Bold", sans-serif;
+  font-size: 2rem;
   letter-spacing: -1px;
   padding: 10px 30px;
 `;

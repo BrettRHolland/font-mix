@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Tag from "./Tag";
 
 function Card({ headlineFont, paragraphFont }) {
-  console.log(headlineFont);
   return (
     <Wrapper>
       <Headline font={headlineFont ? headlineFont : null}>
@@ -27,19 +26,15 @@ function Card({ headlineFont, paragraphFont }) {
 
 const Wrapper = styled.div`
   background-color: #f8f9fa;
-  padding: 40px;
   display: grid;
   grid-template-rows: (auto 1fr auto);
-
-  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01), 0 2px 4px rgba(0, 0, 0, 0.01),
-    0 4px 8px rgba(0, 0, 0, 0.01), 0 8px 16px rgba(0, 0, 0, 0.01),
-    0 16px 32px rgba(0, 0, 0, 0.01), 0 32px 64px rgba(0, 0, 0, 0.01); */
+  padding: 40px;
 `;
 
 const Headline = styled.h2`
   font-family: ${(props) =>
     props.font ? `${props.font.name}, ${props.font.type}` : null};
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 120%;
   margin-bottom: 16px;
 `;
